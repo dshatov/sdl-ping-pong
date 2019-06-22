@@ -204,29 +204,27 @@ static void moveBall(Uint32 dt) {
  * @param dt время с момента последнего обновления (ms).
  */
 static void movePlayers(Uint32 dt) {
-    // TODO: выполнять перемещение пропорционально dt.
-
     const Uint8 *const keysDown = SDL_GetKeyboardState(NULL);
 
     if (keysDown[SDL_SCANCODE_W]) {
-        p1.y -= 10;
+        p1.y -= dt * 2 / 7;
         if (p1.y < 0) {
             p1.y = 0;
         }
     } else if (keysDown[SDL_SCANCODE_S]) {
-        p1.y += 10;
+        p1.y += dt * 2 / 7;
         if (p1.y + p1.h > WINDOW_HEIGHT) {
             p1.y = WINDOW_HEIGHT - p1.h;
         }
     }
 
     if (keysDown[SDL_SCANCODE_UP]) {
-        p2.y -= 10;
+        p2.y -= dt * 2 / 7;
         if (p2.y < 0) {
             p2.y = 0;
         }
     } else if (keysDown[SDL_SCANCODE_DOWN]) {
-        p2.y += 10;
+        p2.y += dt * 2 / 7;
         if (p2.y + p2.h > WINDOW_HEIGHT) {
             p2.y = WINDOW_HEIGHT - p2.h;
         }
