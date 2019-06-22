@@ -23,6 +23,10 @@
     <ClCompile Include="..\src\render.c" />
     <ClCompile Include="..\src\logic.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\render.h" />
+    <ClInclude Include="..\src\logic.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{5CD14F0D-5A46-4FB7-9573-BA0010E403D4}</ProjectGuid>
