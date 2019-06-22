@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.c" />
+    <ClCompile Include="..\src\render.c" />
+    <ClCompile Include="..\src\logic.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
