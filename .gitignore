@@ -1,0 +1,7 @@
+/build
+/libs/*
+!/libs/setup.sh
+!/libs/setup.ps1
+/.idea/*
+!/.idea/inspectionProfiles
+!/.idea/codeStyles
